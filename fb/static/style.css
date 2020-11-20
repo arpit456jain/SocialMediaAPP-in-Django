@@ -1,0 +1,107 @@
+body
+{
+	background-color: #e9ebee;
+}
+.mybtn 
+{
+	background: #3b5998;
+	border: 1px solid black;
+	width: 4rem;
+	color: #fff;
+	font-weight: bold;
+	opacity: .9;
+	height: 2.2rem;
+}
+.mynav
+{
+	background: #3b5998;
+	height: 15vh;
+}
+.inputfield{
+
+height:22px;
+width: 150px;
+border: 1px solid black;
+border-radius: 0px;
+
+}
+
+span
+{
+	color: #3b5998;
+}
+button.btn.mybtn2
+{
+	color: #fff;
+	background: green;
+	padding: 2px 60px;
+	font-size: 1.3rem;
+	font-weight: 600;
+	opacity: .6;
+	border-radius: 10px;
+} 
+
+footer
+{
+	background: #fff;
+	/*height: 32vh;*/
+}
+
+footer a 
+{
+	color: #3b5998;
+	font-size: .8rem;
+}
+
+.mynav2 a 
+{
+	padding: 0.2rem .5rem;
+}
+@media screen and (max-width: 1000px) {
+ 
+  .mynav
+	{
+	height: 18vh;
+	}
+}
+@media screen and (max-width: 850px) {
+ 
+  .mynav
+	{
+	height: 32vh;
+	}
+}
+@media screen and (max-width: 530px) {
+  
+  .mynav
+	{
+	height: 37vh;
+	}
+}
+
+
+/*for hr tag in login page*/
+.separator {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: grey;
+}
+.separator::before, .separator::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid grey;
+}
+
+.separator::before {
+    margin-right: .25em;
+}
+.separator::after {
+    margin-left: .25em;
+}
+
+
+.modal-ku {
+  width: 150px;
+  margin: auto;
+}

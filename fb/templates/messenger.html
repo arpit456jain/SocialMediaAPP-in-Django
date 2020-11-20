@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+  {% load static %}
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Messenger</title>
+    <link rel="icon" href="{% static 'img/messenger.png' %}" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <style>
+    #mydiv
+    {
+      /*margin-top: 21vh;*/
+      height: 20vh;
+    }
+    #myimg
+    {
+      width:3vw;
+      height: 7vh;
+    }
+    .myimg2
+    {
+    width: 11vw; 
+    height: 8vh;
+  }
+
+     @media screen and (max-width: 1000px) {
+  body {
+    /*background-color: blue;*/
+  }
+  #myimg
+  {
+    width:7vw;
+    height:9vh;
+  }
+  #mydiv
+  {
+    /*margin-top: 35vh;*/
+     height: 40vh;
+  }
+ .myimg2
+    {
+    width: 36vw; 
+    height: 8vh;
+}
+  </style>
+  <body>
+    <div class="container-fluid" id="mydiv">
+      
+    </div>
+<!-- RoomsFeaturesPrivacy & safetyFor developers -->
+   <nav class="navbar navbar-expand-lg fixed-top mynav px-5 " style="background: #fff;  ">
+    <a href="/messenger" class="btn" style="margin-left:9vw;">
+    <img src="{% static 'img/messenger.png' %}" id="myimg"  style="" class="img-fluid">
+    </a>
+  <button class="navbar-toggler bg-light" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon bg-primary"><i class="fa fa-bars" aria-hidden="true"></i>
+</span>
+  </button>
+
+  <div class="collapse navbar-collapse pr-5"  id="navbarSupportedContent">
+    <ul class="navbar-nav ml-auto pr-5 py-3">
+      <li class="nav-item ">
+        <a class="nav-link" href="https://www.messenger.com/rooms" style="font-weight: 500;color: black">Rooms</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.messenger.com/features" style="font-weight: 500;color: black">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://www.messenger.com/privacy" style="font-weight: 500;color: black">Privacy & safety</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="https://developers.facebook.com/products/messenger/" style="font-weight: 500;color: black">For developers</a>
+      </li>
+      
+        </ul>
+    
+  </div>
+
+</nav>
+
+
+<div class="container mt-4">
+  <div class="row">
+    <div class="col-lg-5 col-md-8 col-10 px-5">
+      <h1 class=" px-4"> <b> Be together,<br>whenever </b></h1>
+      <p class="px-4" style="color:grey">A simple way to text, video chat and <br> plan things all in one place.</p>
+      <form class="px-4" >
+          <div class="form-group">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address or phone number" style="background:#f5f5f5;border-radius: 10px">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="password" style="background:#f5f5f5;border-radius: 10px">
+          </div>
+          
+          <button type="submit" class="btn btn-primary" style="border-radius: 30px;font-size: 1.1rem;padding:13px 23px;font-weight: 700">Sign in</button>
+          <div class="form-group form-check mt-3 mb-2">
+            <input type="checkbox" class="form-check-input" id="exampleCheck1">
+            <label class="form-check-label" for="exampleCheck1">Keep me signed in</label>
+          </div>
+
+          <a href="" style="margin-top: 20px;color: grey">Forgotten your password?</a>
+
+          <a class="btn" href="https://apps.apple.com/app/id454638411"><img src="{% static 'img/apple logo.png' %}" class="myimg2" ></a>
+          <br>
+          <a class="btn" href="https://play.google.com/store/apps/details?id=com.facebook.orca"><img src="{% static 'img/gp logo.png' %}"  class="myimg2"></a>
+        </form>
+    </div>
+    <div class="col-lg-7 col-md-8 col-10">
+      <div style="height: 100vh;">
+        <img src="{% static 'img/new.png' %}" style="width: 100%;height: 100vh;">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section>
+  <div class="container-fluid text-center mt-5 bg-light py-5">
+    <h1>So many ways to connect with all your friends</h1>
+    <div style="height:85vh;">
+      <img src="{% static 'img/messenger pic.png' %}" class="img-fluid">
+    </div>
+  </div>
+</section>
+
+
+<footer>
+  <div class="container-fluid mt-3">
+    <div class="row">
+      <div class="col-lg-2 col-md-2 col-4  pr-0"><span>© Arpit Jain 2020</span>
+      </div>
+      <div class="col-lg-4 col-md-5 col-7">
+        <p style="color: grey;font-size: .8rem">The Apple and Google Play logos are trademarks of their respective owners.</p>
+      </div>   
+      <div class="col-lg-4 col-md-5 col-sm-8 col-11">
+        <ul class="nav">
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/policy.php" style="color: grey;">Data Policy</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://www.facebook.com/policies/?ref=pf" style="color: grey;">Terms</a>
+            </li>
+            <li class="nav-item">
+              <button class="_8vbk btn" id="u_0_k"><span class="_8vbl">English (UK)</span><svg class="_8v9s" height="8" width="8" viewBox="0 0 8 8" xmlns="http://www.w3.org/2000/svg"><polygon points="0,0 4,8 8,0"></polygon></svg></button>
+            </li>
+          </ul>
+      </div>
+      <div class="col-lg-2 col-sm-4 col-10">
+        <a href="/"><span class="mx-1"> for</span><span  class="mx1" style="
+        color:blue;font-size: 1rem;">FB</span></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,313 @@
+<!doctype html>
+{% load static %}
+{% static "img/postimg" as baseurl %}
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <title>Facebook</title>
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css" rel="stylesheet"/>
+<link rel="icon" href="img/fbicon.png" type="image/icon type">
+    <style>
+      .anyClass {
+              height:75vh;
+              overflow-y: scroll;
+            }
+        body
+        {
+          background: #F2F3F5;
+        }
+        .fbicons li i
+        {
+          color:black;
+          margin: 2px 15px;
+        }
+        .fbicons li span
+        {
+         position: relative;
+         font-size: .8rem;
+         top:0px;
+        }
+        .fbicons li i:hover
+        {
+          color:blue;
+        }
+        .fbicons2 li i
+        {
+          color:black;
+          background:#F2F3F5;
+          padding:8px;
+          font-size: 1.1rem;
+          border-radius: 50%;
+        }
+        .fbicons2 li span
+        {
+          position: relative;
+         font-size: .8rem;
+         top:0px;
+        }
+        .fbicons2 li i:hover
+        {
+          color:blue;
+          background: #fff;
+        }
+        .myicons .btn i
+        {
+          font-size: 2rem;
+        }
+
+        @media screen and (max-width: 1200px)
+        {
+            body 
+            {
+              /*background-color: olive;*/
+            }
+            .myicons .btn i
+              {
+                font-size: 1.2rem;
+              }
+
+          } 
+
+      @media screen and (max-width: 500px)
+        {
+          #rightdiv , #leftdiv
+          {
+            display: none;
+          }
+        }
+    </style>
+    
+  </head>
+  <body>
+
+    <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light" style="background: #fff;">
+
+        <!-- 1st row -->
+        <div class="row col-lg-3 col-md-12 col-12 mr-auto">
+          <div class="col-lg-3 col-3">
+           <img src="{% static 'img/fbicon.png' %}" style="width:100%;height:6vh;">
+          </div>
+          <div class="col-lg-6 col-7">
+                <form class="form-inline my-lg-0">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search" style="border-radius: 20px;">
+              </form>
+          </div>
+        </div>
+        
+
+        <!-- middle row -->
+        <div class="row">
+          <div class="col">
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#middle" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="middle">
+                  <ul class="navbar-nav mr-auto fbicons">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#"><i class="fa fa-2x fa-home" aria-hidden="true"><span class="badge badge-danger">9</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa fa-2x fa-youtube-play" aria-hidden="true"><span class="badge badge-danger">5</span></i></a>
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa fa-2x fa-shopping-basket" aria-hidden="true"><span class="badge badge-danger">7</span></i></a>
+                    </li>
+                     <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa fa-2x fa-users" aria-hidden="true"><span class="badge badge-danger">2</span></i></a>
+                    </li>
+                    <li class="nav-item">
+                      <a href="" class="nav-link"><i class="fa fa-2x fa-trophy" aria-hidden="true"><span class="badge badge-danger">3</span></i></a>
+                    </li>
+                  </ul>
+                </div>
+          </div>
+        </div>
+
+        <!-- 3rd row -->
+        <div class="row col-4 ml-auto">
+          <div class="col">
+             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#right" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="right">
+            <ul class="navbar-nav fbicons2">
+                  <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <ul class="navbar-nav ">
+                          <li class="nav-item">
+                            <img src="{% static 'img/my img.jpg' %}" style="width: 4vw;height:7vh;border-radius:50%;">
+                             <!-- <h6 style="color: black;">Arpit</h6> -->
+                             <div class="dropdown show">
+                              <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Arpit
+                              </a>
+
+                              <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="/">Log Out</a>
+                                <a class="dropdown-item" href="/login">Log in another account</a>
+                              </div>
+                            </div>
+                          </li>
+                        </ul>
+                      </a>
+                  </li>
+                  <li class="nav-item my-auto">
+                      <a class="nav-link" href="#"><span class="badge badge-danger" style="color: #fff;background: #fff"> </span><i class="fa fa-plus" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="nav-item   my-auto">
+                      <a class="nav-link" href="#"><span class="badge badge-danger">6</span><i class="fa fa-comments" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="nav-item  my-auto">
+                      <a class="nav-link" href="#"><span class="badge badge-danger">8</span><i class="fa fa-bell" aria-hidden="true"></i></a>
+                  </li>
+                  <li class="nav-item  my-auto">
+                      <a class="nav-link" href="#"><span class="badge badge-danger">9</span><i class="fa fa-caret-down" aria-hidden="true"></i></a>
+                  </li>
+        
+             </ul>
+           </div>
+          </div>
+        </div>
+
+ 
+</nav>
+    <!-- navbar end -->
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <!-- left side bar -->
+        <div class="col-lg-3 col-md-3 col-3" id="leftdiv">
+         <ul class="nav nav-pills nav-stacked anyClass" id="myleftbar"> 
+              <!-- left bar here -->
+
+            
+          </ul>
+        </div>
+
+        <!-- middle -->
+        <div class="col-lg-6 col-md-6 col-12 px-0">
+
+          <div class="container-fluid col-11 my-3 pb-3 pt-1" style="background: #fff;border-radius:12px;">
+            <div class="mx-auto container-fluid"> 
+                  <img src="{% static 'img/my img.jpg' %}" style="width:7vh;height:8vh;border-radius: 50%;">
+                  <input type="" name="" style="width:80%;height: 6vh; border-radius: 20px;border:1px solid black;background: #F2F3F5" placeholder="What's on your mind Arpit?" class="ml-1">
+            </div>
+                  <hr>
+            <div class="mx-auto container-fluid"> 
+              <div class="row myicons">
+                <div class="col-lg-4 col-md-6 col-6 mb-1">
+                  <button class="btn">
+                   <i class="fa fa-video-camera " aria-hidden="true" style="color: red;"></i>  Live Video  
+                  </button>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6 mb-1">
+                  <button class="btn">
+                      <i class="fa  fa-picture-o" aria-hidden="true" style="color: green;"></i> Photo/Video
+                  </button>
+                </div>
+                <div class="col-lg-4 col-md-7 col-10 mb-1 mx-auto">
+                  <button class="btn">
+                      <i class="fa  fa-smile-o" aria-hidden="true" style="color: yellow;"></i> Feeling/Activity 
+                    </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- posts -->
+          <div class="container-fluid mx-auto">
+            <div class="row" id="posts">
+              <!-- posts start here   -->
+            </div>
+          </div>
+        </div>
+
+        <!-- right -->
+        <div class="col-lg-3 col-md-3 col-3" id="rightdiv">
+          <h6>Contacts</h6>
+         <ul class="nav nav-pills nav-stacked anyClass" id="mycontact">
+            <!-- mycontact here -->
+            </ul>
+        </div>
+      </div>
+    </div>
+    
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      console.log("main js")
+      let likebut = document.getElementById('likebut');
+      function like()
+      {
+          alert(likebut);
+          likebut.style.color = "blue";
+      }
+
+      // left
+
+      let leftbar = ["Arpit Jain","Covid","Friends","Messenger","Events","Marketplace","Arpit Jain","Covid",
+      "Friends","Messenger"];
+      let myleftbar= document.getElementById('myleftbar');
+      for (var i = 0; i < 30; i++) 
+                {
+                    myleftbar.innerHTML = myleftbar.innerHTML+`<li class="nav-item col-12">
+              <a class="nav-link" href="#">` + leftbar[i] + `</a>
+            </li>`
+
+                }
+
+
+
+
+
+ var mycontacts = ["Twinkle" ,"Arpit", "Ashish", "Jai","Vineet" , "Aditya" , "Arnav" , "Yash" , "Mishra" , "Akshat" , "Anuj","vishal" ,"aman"];
+      // middle
+      let posts= document.getElementById('posts');
+              for (var i = 1; i <13; i++) 
+                {
+                    posts.innerHTML = posts.innerHTML+ `<div class="col-lg-9 col-md-10 col-12 mx-auto">
+                <div class="card">
+                  <h6 class="mt-1 ">`+ mycontacts[i-1] + ` is with `+ mycontacts[i-1] + ` and ` +(3*i )+  ` others</h6>
+                  <img src="{{baseurl}}/`+i+`.jpg" class="card-img-top" alt="..." style="height:60vh;">
+                  <hr>
+                  <i class="fa fa-thumbs-up" aria-hidden="true" style="color:#fff;background:blue;font-size: 1.4rem; border-radius: 50%;padding:5px"></i>
+                  <i class="fa fa-heart" aria-hidden="true" style="color:#fff;background: pink;font-size: 1.4rem; border-radius: 50%;padding:5px"></i>
+                  <span>23</span>
+                  <hr>
+                  <div class="container-fluid my-2">
+                  <button class="btn col-lg-3 col-md-8 col-10 mb-1"><i class="fa fa-thumbs-up" aria-hidden="true" id="likebut" onclick="like()"></i>Like</button>
+                  <button class="btn col-lg-3 col-md-8 col-10 mb-1"><i class="fa fa-comment-o" aria-hidden="true"></i>coment</button>
+                  <button class="btn col-lg-3 col-md-8 col-10 mb-1"><i class="fa fa-share" aria-hidden="true"></i>share</button>
+                  </div>
+                </div>
+              </div> `;
+                }
+
+      // right
+     
+      console.log(mycontacts,mycontacts[0]);
+      let mycontact = document.getElementById('mycontact');
+          for (var i = 0; i <20; i++) 
+                {
+                  mycontact.innerHTML = mycontact.innerHTML + 
+                  `<li class="nav-item col-12">
+                <a class="nav-link" href="#">`+mycontacts[i]+`</a>
+              </li>`;
+                }
+    </script>
+  </body>
+</html>
