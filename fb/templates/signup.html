@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Sign up for Facebook | Facebook
+{% endblock title %}
+   
+
+{% block body %}
+
+  <!-- main form -->
+<div class="container px-5 py-3 col-lg-5 col-md-7 col-10">
+          <h1>Create new account</h1>
+          <p> It's quick and easy </p>
+              <form>
+                <div class="row">
+                  <div class="col-lg-5 col-md-5 col-10">
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="First name" required>
+                  </div>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-10">
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Surname" required>
+                  </div>
+                  </div>
+                </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mobile number or email address" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="New password"required>
+                  </div>
+                   <div class="form-group">
+                    <label>Date of birth</label>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <input type="date" class="form-control" id="" aria-describedby="emailHelp" style="width: 13vw" required>
+                    <!-- <i class="fa fa-question-circle" aria-hidden="true"></i> -->
+                  </div>
+                  <div class="form-group" style="font-weight:600">
+                    <label style="color: grey">Gender</label>
+                    <br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"  required>
+                        <label class="custom-control-label" for="customRadioInline1">Female</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                        <label class="custom-control-label" for="customRadioInline2">Male</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input" required>
+                        <label class="custom-control-label" for="customRadioInline3">Custom</label>
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>  
+                      </div>
+                  </div>
+                  <div class="px-4"> 
+                  <p style="font-size: .7rem;">
+                    By clicking Sign Up, you agree to our 
+                    <a href="https://www.facebook.com/legal/terms/update"><span>Terms,</span></a> 
+                    <a href="https://www.facebook.com/about/privacy/update"><span>Data Policy </span></a>
+                     and  <a href="#"><span>Cookie Policy. </span> </a>You may receive SMS notifications from us and can opt out at any time.</p>
+                  </div>
+                  <button type="submit" class="btn mybtn2" id="signup">Sign up</button>
+                </form>
+                <hr>
+                 <p><a href=""><span>Create a Page </span></a>for a celebrity, band or business.</p>
+          </div>
+
+
+{% endblock body %}
+ 

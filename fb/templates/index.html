@@ -1,0 +1,229 @@
+
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}Facebook - log in or sign up
+{% endblock title %}
+{% block body %}
+
+
+
+  <div class="alert alert-success alert-dismissible fade show" role="alert" id="alert1" style="display: none;">
+  <strong>Congratultions</strong> Your account is successfully created!!
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
+
+
+<section class="main"> 
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-5 col-md-6 col-11 ml-5">
+           <div class="container pt-3 pl-2 ml-5">
+            <h1>Recent login</h1>
+            <p>Click your picture or add account </p>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-6 pl-3">
+                  <div class="card">
+                    <a href="#" style="position:absolute;color: #fff;padding: 2px;" id="account1"><i class="fa fa-times" aria-hidden="true"></i></a><span class="badge badge-light" style="position: absolute;right: -3px;top:-5px;color:#fff;background: red;border-radius: 10px;font-size: 1rem;">9</span>
+                    <a href="" data-toggle="modal" data-target="#arpitjain">
+                      <img src= "{% static 'img/my img.jpg' %}" class="card-img-top img-fluid" alt="..." style="height:25vh;">
+                    </a>
+                      <div class="card-body">
+                         <a href="" data-toggle="modal" data-target="#arpitjain">
+                        <h5 class="card-title" style="color: black">Arpit</h5>
+                      </a>
+                       <div class="modal fade" id="arpitjain" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group px-3 text-center">                              
+                                        <img src="{% static 'img/my img.jpg' %}" class="card-img-top img-fluid" alt="..." style="height:25vh;width: 80%;">      
+                                        <h5 class="mt-2">Arpit Jain</h5>                                 
+                                      </div>
+                                      <div class="form-group">
+                                       
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                      </div>
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                        <label class="form-check-label" for="exampleCheck1">Rembmer me</label>
+                                      </div>
+                                        <button type="submit" class="btn" style="background:#3b5998;color: #fff;width:100%;border-radius: 0;font-weight: 600;font-size: 1.2rem;">Log in</button>
+                                        <hr>
+                                        <p><span>Forgotten password?</span></p>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                  
+                  <div class="card">
+                     <a href="#" style="position:absolute;color: #fff;padding: 2px;" id="account2"><i class="fa fa-times" aria-hidden="true"></i></a><span class="badge badge-light" style="position: absolute;right: -3px;top:-5px;color:#fff;background: red;border-radius: 10px;font-size: 1rem;">5</span>
+                     <a href="" data-toggle="modal" data-target="#oliver">
+                      <img src="{% static 'img/nisha.jpg' %}" class="card-img-top img-fluid" alt="..." style="height:25vh;">
+                      </a>
+                      <div class="card-body">
+                        <a href="" data-toggle="modal" data-target="#oliver">
+                        <h5 class="card-title" style="color: black">Oliver</h5>
+                      </a>
+                       <!-- Modal -->
+                            <div class="modal fade" id="oliver" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group px-3 text-center">                              
+                                        <img src="{% static 'img/nisha.jpg' %}" class="card-img-top img-fluid" alt="..." style="height:25vh;width: 80%;">      
+                                        <h5 class="mt-2">Oliver</h5>                                 
+                                      </div>
+                                      <div class="form-group">
+                                       
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                      </div>
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                        <label class="form-check-label" for="exampleCheck1">Rembmer me</label>
+                                      </div>
+                                        <button type="submit" class="btn" style="background:#3b5998;color: #fff;width:100%;border-radius: 0;font-weight: 600;font-size: 1.2rem;">Log in</button>
+                                        <hr>
+                                        <p><span>Forgotten password?</span></p>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+                <div class="col-lg-4  col-md-6 col-6">
+                  <a href="" data-toggle="modal" data-target="#addnewaccount">
+                  <div class="card"  style="height: 37vh;background:#f5f5f5;border: none;">
+                        <div  class="mt-5 text-center" style="height: 19vh;margin-bottom: 1vh; padding-top:1vh">
+                          <i class="fa fa-plus-circle fa-4x" aria-hidden="true" style="color: #3b5998"></i>
+                        </div>
+                    </a> 
+                      <div class="card-body" style="background: #fff;">
+                        <a href="" data-toggle="modal" data-target="#addnewaccount" style="font-size: 1.1rem;color:#3b5998">Add account</a>
+                        <!-- Button trigger modal -->
+                            <!-- Modal -->
+                            <div class="modal fade" id="addnewaccount" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                              <div class="modal-dialog modal-dialog-centered modal-sm" role="document">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <h6 class="modal-title" id="exampleModalLongTitle">Login to Facebook</h6>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                      <span aria-hidden="true">&times;</span>
+                                    </button>
+                                  </div>
+                                  <div class="modal-body">
+                                    <form>
+                                      <div class="form-group">
+                                      
+                                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email address or phone number" required>
+                                       
+                                      </div>
+                                      <div class="form-group">
+                                       
+                                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password" required>
+                                      </div>
+                                      <div class="form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
+                                        <label class="form-check-label" for="exampleCheck1">Rembmer me</label>
+                                      </div>
+                                        <button type="submit" class="btn" style="background:#3b5998;color: #fff;width:100%;border-radius: 0;font-weight: 600;font-size: 1.2rem;">Log in</button>
+                                        <hr>
+                                        <p><span>Forgotten password?</span></p>
+                                    </form>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+       </div>
+       </div>
+
+      <div class="col-lg-5 col-md-6 col-11 mx-5">
+        <div class="container px-5 py-3">
+          <h1>Create new account</h1>
+          <p> It's quick and easy </p>
+              <form>
+                <div class="row">
+                  <div class="col-lg-5 col-md-5 col-10">
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="First name" required>
+                  </div>
+                  </div>
+                  <div class="col-lg-5 col-md-5 col-10">
+                    <div class="form-group">
+                    <input type="text" class="form-control" id="" aria-describedby="emailHelp" placeholder="Surname" required>
+                  </div>
+                  </div>
+                </div>
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Mobile number or email address" required>
+                  </div>
+                  <div class="form-group">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="New password"required>
+                  </div>
+                   <div class="form-group">
+                    <label>Date of birth</label>
+                    <i class="fa fa-question-circle" aria-hidden="true"></i>
+                    <input type="date" class="form-control" id="" aria-describedby="emailHelp" style="width: 13vw" required>
+                    <!-- <i class="fa fa-question-circle" aria-hidden="true"></i> -->
+                  </div>
+                  <div class="form-group" style="font-weight:600">
+                    <label style="color: grey">Gender</label>
+                    <br>
+                    <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input"  required>
+                        <label class="custom-control-label" for="customRadioInline1">Female</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input" required>
+                        <label class="custom-control-label" for="customRadioInline2">Male</label>
+                      </div>
+                      <div class="custom-control custom-radio custom-control-inline">
+                        <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input" required>
+                        <label class="custom-control-label" for="customRadioInline3">Custom</label>
+                        <i class="fa fa-question-circle" aria-hidden="true"></i>  
+                      </div>
+                  </div>
+                  <div class="px-4"> 
+                  <p style="font-size: .7rem;">
+                    By clicking Sign Up, you agree to our 
+                    <a href="https://www.facebook.com/legal/terms/update"><span>Terms,</span></a> 
+                    <a href="https://www.facebook.com/about/privacy/update"><span>Data Policy </span></a>
+                     and  <a href="#"><span>Cookie Policy. </span> </a>You may receive SMS notifications from us and can opt out at any time.</p>
+                  </div>
+                  <button type="submit" class="btn mybtn2" id="signup">Sign up</button>
+                </form>
+                <hr>
+                 <p><a href=""><span>Create a Page </span></a>for a celebrity, band or business.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+{% endblock body %}

@@ -1,0 +1,164 @@
+{% load static %}
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>{% block title %}
+        {% endblock title %}</title>
+
+    <!-- to add icon in title -->
+    <link rel="icon" href="img/fb logo.jpg" type="image/icon type">
+    <link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+
+    <!-- for font aws icons -->
+    <link rel="stylesheet" type="text/css"
+        href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    {% block stylecss %}
+    {% endblock stylecss %}
+</head>
+
+<body>
+
+
+    <nav class="navbar navbar-expand-lg navbar-dark pt-4 mynav">
+        <a class="navbar-brand pb-3 pl-5 ml-5" href="/"
+            style="font-size: 2.7rem;font-weight: 650;">facebook</a>
+        <div class="navdiv ml-auto pr-5 text-white">
+            <form action="/login/" method="post">
+            <div class="form-group row pr-5">
+
+                <div class="col-xs-2 mx-2">
+                    {% csrf_token %}
+                    <label for="exampleInputEmail1">Email or Phone</label>
+                    <input type="email" class="form-control inputfield" aria-describedby="emailHelp" id="email_aj" name="email">
+                </div>
+                <div class="col-xs-3 mx-2">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control inputfield" id="password_aj" name="password">
+                    <a href="/login"><small id="emailHelp" class="form-text" style="color:#99badd;">Forgotten
+                            account?</small></a>
+                </div>
+                <button type="submit" class="btn mybtn my-auto mx-2 pr-5" id="login">Login</button>
+            </div>
+            </form>
+        </div>
+    </nav>
+
+
+
+    {% block body %}
+    {% endblock body %}
+
+
+
+
+
+
+    <footer>
+        <div class="container px-5">
+            <ul class="nav mynav2 pt-2">
+                <li class="nav-item">
+                    <a class="nav-link" href="/" style="color: grey">English (UK)</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://hi-in.facebook.com/">हिन्दी</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://ur-pk.facebook.com/">اردو</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://kn-in.facebook.com/">ಕನ್ನಡ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">తెలుగు</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">தமிழ்</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://mr-in.facebook.com/">मराठी</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gu-in.facebook.com/">ગુજરાતી</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gu-in.facebook.com/">বাংলা</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://gu-in.facebook.com/">ਪੰਜਾਬੀ</a>
+                </li>
+                <li class="nav-item">
+                    <button style="border: none;font-size: 1.1rem;font-weight:700; padding:  1px 10px;">+</button>
+                </li>
+            </ul>
+            <hr>
+        </div>
+        <div class="container px-5 mb-3">
+            <ul class="nav mynav2" id="myfooterli">
+                <li class="nav-item">
+                    <a class="nav-link" href="/signup">Sign Up</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/login">Log In</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/messenger">Messenger</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/lite">Facebook Lite </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Watch</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/directory/people/">People</a>
+                </li>
+                <!-- other li bs js -->
+            </ul>
+        </div>
+        <div class="container text-center">
+            <span>Facebook &copy Arpit Jain 2020</span>
+        </div>
+    </footer>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+
+    <script src="{% static 'index.js' %}"></script>
+
+    <script>
+        let myli = ["Pages", "Page categories", "Places", "Games",
+            "Locations", "Marketplace", "Facebook Pay", "Groups", "Oculus", "Portal",
+            "Instagram", "Local ", "Fundraisers", "Services", "About", "Create ad", "Create Page",
+            " Developers ", "Careers", "Privacy", " Cookies", "AdChoices", "Terms", "Help"]
+        let myfooterli = document.getElementById('myfooterli');
+
+        for (var i = 0; i < 20; i++) {
+            myfooterli.innerHTML = myfooterli.innerHTML + `<li class="nav-item">
+              <a class="nav-link" href="/">`+ myli[i] + `</a>
+            </li>`;
+        }
+
+    </script>
+</body>
+
+</html>
